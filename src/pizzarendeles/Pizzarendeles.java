@@ -460,7 +460,7 @@ public class Pizzarendeles extends javax.swing.JFrame {
             uzenet = "Sikeresen feladta a rendelést!";
             ikonTipus = JOptionPane.INFORMATION_MESSAGE;
         }
-        JOptionPane.showMessageDialog(null, uzenet + " - Tesztverzió!", cim, ikonTipus);
+        JOptionPane.showMessageDialog(null, uzenet + " - Tesztverzió!", cim + " - Teszt", ikonTipus);
 //        String cim;
 //        String uzenet;
 //        cim = "Sikeres rendelés";
