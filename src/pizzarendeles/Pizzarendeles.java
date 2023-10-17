@@ -356,15 +356,6 @@ public class Pizzarendeles extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(comFajta, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtRendelo, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(181, 181, 181)
-                                .addComponent(lblSzosz))
-<<<<<<< HEAD
-=======
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(182, 182, 182)
-                                .addComponent(lblFeltet))
->>>>>>> dac09d0a97be31566be936fa65451353e51d91b3
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(txtEgyeb)
@@ -386,15 +377,18 @@ public class Pizzarendeles extends javax.swing.JFrame {
                     .addComponent(lblPizzarend, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-<<<<<<< HEAD
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblSzosz)
+                .addGap(187, 187, 187))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTeszta, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblFeltet, javax.swing.GroupLayout.Alignment.TRAILING))
-=======
-                .addComponent(lblTeszta)
->>>>>>> dac09d0a97be31566be936fa65451353e51d91b3
-                .addGap(183, 183, 183))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(185, 185, 185)
+                        .addComponent(lblTeszta))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(187, 187, 187)
+                        .addComponent(lblFeltet)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {lblFajta, lblRendelo});
@@ -426,15 +420,9 @@ public class Pizzarendeles extends javax.swing.JFrame {
                 .addComponent(lblSzosz)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelSzosz, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-<<<<<<< HEAD
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblFeltet)
-                .addGap(12, 12, 12)
-=======
-                .addGap(12, 12, 12)
+                .addGap(24, 24, 24)
                 .addComponent(lblFeltet)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
->>>>>>> dac09d0a97be31566be936fa65451353e51d91b3
                 .addComponent(panelFeltet, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblEgyeb)
@@ -460,6 +448,7 @@ public class Pizzarendeles extends javax.swing.JFrame {
     private void btnKuldesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKuldesActionPerformed
         boolean rendeloNev = "".equals(txtRendelo.getText());
         int mennyiseg = (int) spinMennyiseg.getValue();
+        int osszeg;
         String uzenet, cim = "FIGYELEM!";
         int ikonTipus;
         if(rendeloNev){
@@ -473,10 +462,11 @@ public class Pizzarendeles extends javax.swing.JFrame {
         }
         else{
             cim = "Sikeres rendelés!";
-            uzenet = "Sikeresen feladta a rendelést!";
+            osszeg = 1500;
+            uzenet = "Sikeresen feladta a rendelést! - A pizza összege " + osszeg + " Ft";
             ikonTipus = JOptionPane.INFORMATION_MESSAGE;
         }
-        
+        JOptionPane.showMessageDialog(rootPane, uzenet, cim, ikonTipus);
         
 //        String cim;
 //        String uzenet;
@@ -490,6 +480,7 @@ public class Pizzarendeles extends javax.swing.JFrame {
         int pizzaFajta = comFajta.getSelectedIndex();
         switch (pizzaFajta) {
             case 1 -> {
+                rabParSzosz.setSelected(true);
                 cbxMozza.setSelected(true);
                 cbxTonhal.setSelected(false);
                 cbxJalapeno.setSelected(false);
@@ -504,6 +495,7 @@ public class Pizzarendeles extends javax.swing.JFrame {
                 cbxBazsa.setSelected(false);
             }
             case 2 -> {
+                rabParSzosz.setSelected(true);
                 cbxMozza.setSelected(true);
                 cbxTonhal.setSelected(false);
                 cbxJalapeno.setSelected(false);
@@ -518,6 +510,7 @@ public class Pizzarendeles extends javax.swing.JFrame {
                 cbxBazsa.setSelected(false);
             }
             case 3 -> {
+                rabParSzosz.setSelected(true);
                 cbxMozza.setSelected(true);
                 cbxTonhal.setSelected(false);
                 cbxJalapeno.setSelected(false);
