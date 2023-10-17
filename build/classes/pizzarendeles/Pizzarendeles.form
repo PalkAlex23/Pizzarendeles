@@ -56,6 +56,13 @@
                               <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
                               <Component id="lblSzosz" min="-2" max="-2" attributes="0"/>
                           </Group>
+<<<<<<< HEAD
+=======
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
+                              <Component id="lblFeltet" min="-2" max="-2" attributes="0"/>
+                          </Group>
+>>>>>>> dac09d0a97be31566be936fa65451353e51d91b3
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="txtEgyeb" max="32767" attributes="0"/>
@@ -86,11 +93,16 @@
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+<<<<<<< HEAD
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblTeszta" alignment="1" min="-2" max="-2" attributes="0"/>
                   <Component id="lblFeltet" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="183" pref="183" max="-2" attributes="0"/>
+=======
+              <Component id="lblTeszta" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
+>>>>>>> dac09d0a97be31566be936fa65451353e51d91b3
           </Group>
       </Group>
     </DimensionLayout>
@@ -123,9 +135,15 @@
               <Component id="lblSzosz" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="panelSzosz" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="lblFeltet" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+=======
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+              <Component id="lblFeltet" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+>>>>>>> dac09d0a97be31566be936fa65451353e51d91b3
               <Component id="panelFeltet" min="-2" pref="113" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="lblEgyeb" min="-2" max="-2" attributes="0"/>
