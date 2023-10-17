@@ -448,7 +448,6 @@ public class Pizzarendeles extends javax.swing.JFrame {
     private void btnKuldesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKuldesActionPerformed
         boolean rendeloNev = "".equals(txtRendelo.getText());
         int mennyiseg = (int) spinMennyiseg.getValue();
-        int osszeg;
         String uzenet, cim = "FIGYELEM!";
         int ikonTipus;
         if(rendeloNev){
@@ -462,8 +461,7 @@ public class Pizzarendeles extends javax.swing.JFrame {
         }
         else{
             cim = "Sikeres rendelés!";
-            osszeg = 1500;
-            uzenet = "Sikeresen feladta a rendelést! - A pizza összege " + osszeg + " Ft";
+            uzenet = "Sikeresen feladta a rendelést!";
             ikonTipus = JOptionPane.INFORMATION_MESSAGE;
         }
         JOptionPane.showMessageDialog(rootPane, uzenet, cim, ikonTipus);
