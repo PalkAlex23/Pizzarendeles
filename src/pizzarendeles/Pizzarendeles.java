@@ -359,9 +359,6 @@ public class Pizzarendeles extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(181, 181, 181)
                                 .addComponent(lblSzosz))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(182, 182, 182)
-                                .addComponent(lblFeltet))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(txtEgyeb)
@@ -384,7 +381,9 @@ public class Pizzarendeles extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(lblTeszta)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblTeszta, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblFeltet, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(183, 183, 183))
         );
 
@@ -417,9 +416,9 @@ public class Pizzarendeles extends javax.swing.JFrame {
                 .addComponent(lblSzosz)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panelSzosz, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(lblFeltet)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblFeltet)
+                .addGap(12, 12, 12)
                 .addComponent(panelFeltet, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblEgyeb)
@@ -461,7 +460,7 @@ public class Pizzarendeles extends javax.swing.JFrame {
             uzenet = "Sikeresen feladta a rendelést!";
             ikonTipus = JOptionPane.INFORMATION_MESSAGE;
         }
-        JOptionPane.showMessageDialog(null, uzenet, cim, ikonTipus);
+        JOptionPane.showMessageDialog(null, uzenet + " - Tesztverzió!", cim, ikonTipus);
 //        String cim;
 //        String uzenet;
 //        cim = "Sikeres rendelés";
